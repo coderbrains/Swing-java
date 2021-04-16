@@ -12,7 +12,7 @@ public class SwingDemo {
 
 	public static void main(String[] args) {
 		
-		Swingdemoo swingdemo = new Swingdemoo();
+		new Swingdemoo();
 		
 		/**This is not the recomended way to do so .
 		 * The best way is to use the below code in the constructor
@@ -29,6 +29,7 @@ public class SwingDemo {
 	
 }
 
+@SuppressWarnings("serial")
 class Swingdemoo extends JFrame{
 	
 	public Swingdemoo() {

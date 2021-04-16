@@ -22,6 +22,7 @@ public class AdditionOfTwoNumbers {
 
 }
 
+@SuppressWarnings("serial")
 class Addition extends JFrame{
 	
 	JTextField jTextField, jTextField1;

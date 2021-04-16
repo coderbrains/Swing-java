@@ -10,12 +10,13 @@ public class MouseListener_Java {
 
 	public static void main(String[] args) {
 		
-		MouseActivity mouseActivity = new MouseActivity();
+		new MouseActivity();
 
 	}
 
 }
 
+@SuppressWarnings("serial")
 class MouseActivity extends JFrame{
 	
 	public MouseActivity() {

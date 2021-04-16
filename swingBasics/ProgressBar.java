@@ -3,7 +3,6 @@ package swingByNonTelusko.swingBasics;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Timer;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -15,13 +14,13 @@ public class ProgressBar {
 
 	public static void main(String[] args) {
 		
-		XYZ x = new XYZ();
+		new XYZ();
 
 	}
 
 }
 
-
+@SuppressWarnings("serial")
 class XYZ extends JFrame implements ActionListener{
 	
 	JButton jButton;
@@ -71,6 +70,7 @@ class XYZ extends JFrame implements ActionListener{
 	}
 }
 
+@SuppressWarnings("serial")
 class XY extends JFrame{
 	
 	JTextField jTextField, jTextField1;

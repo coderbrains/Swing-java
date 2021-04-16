@@ -11,13 +11,14 @@ import javax.swing.JLabel;
 public class CallAnotherSwing {
 
 	public static void main(String[] args) {
-		X x = new X();
+		new X();
 		
 
 	}
 
 }
 
+@SuppressWarnings("serial")
 class X extends JFrame{
 	
 	JButton jButton;
@@ -54,6 +55,7 @@ class X extends JFrame{
 	
 }
 
+@SuppressWarnings("serial")
 class Y extends JFrame{
 	
 	JLabel jButton = new JLabel();

@@ -18,12 +18,13 @@ public class CheckBoxInSwing {
 
 	public static void main(String[] args) {
 		
-		CheckDemo checkDemo = new CheckDemo();
+		new CheckDemo();
 
 	}
 
 }
 
+@SuppressWarnings("serial")
 class CheckDemo extends JFrame implements ActionListener{
 	
 	JTextField jTextField;

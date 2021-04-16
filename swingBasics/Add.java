@@ -19,7 +19,7 @@ public class Add {
 	
 	public static void main(String[] args) {
 		
-		Add2num add2num = new Add2num();
+		new Add2num();
 		
 		
 	}
@@ -126,7 +126,7 @@ public class Add {
  */
 
 
-
+@SuppressWarnings("serial")
 class Add2num extends JFrame{
 	
 	JTextField jTextField, jTextField2;
@@ -145,7 +145,7 @@ class Add2num extends JFrame{
 		add(jButton);
 		add(jLabel);
 		
-		ActionListener actionListener = new ActionListener() {
+		new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
