@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 /**
  * 
  * @author Awanish kumar singh
+ * 
  *  Arranges the components in single row or single column
  *  only one constructor is used - BoxLayout(Container target, int axis);
  *  Four different axis could be choosen

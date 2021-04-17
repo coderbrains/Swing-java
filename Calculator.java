@@ -1,5 +1,6 @@
 package swingByNonTelusko;
 
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -33,46 +34,46 @@ class CalculatorImplementation extends JFrame implements ActionListener{
 		jLabel = new JLabel();
 		jLabel.setText("First Number - ");
 		jLabel.setBounds(50, 30, 200, 40);
-		container.add(jLabel);
+		add(jLabel);
 		
 		jTextField = new JTextField();
 		jTextField.setBounds(180, 35, 200, 30);
-		container.add(jTextField);
+		add(jTextField);
 		
 		jLabel2 = new JLabel();
 		jLabel2.setText("Second Number - ");
 		jLabel2.setBounds(50, 70, 200, 40);
-		container.add(jLabel2);
+		add(jLabel2);
 		
 		jTextField2 = new JTextField();
 		jTextField2.setBounds(180, 70, 200, 30);
-		container.add(jTextField2);
+		add(jTextField2);
 		
 		jLabel3 = new JLabel();
 		jLabel3.setText("Result :");
 		jLabel3.setBounds(180, 110, 200, 30);
-		container.add(jLabel3);
+		add(jLabel3);
 		
 		
 		add = new JButton();
 		add.setText("+");
 		add.setBounds(30, 150, 100, 50);
-		container.add(add);
+		add(add);
 		
 		mul = new JButton();
 		mul.setText("*");
 		mul.setBounds(130, 150, 100,50);
-		container.add(mul);
+		add(mul);
 		
 		div = new JButton();
 		div.setText("/");
 		div.setBounds(230, 150, 100, 50);
-		container.add(div);
+		add(div);
 		
 		sub = new JButton();
 		sub.setText("-");
 		sub.setBounds(330, 150, 100, 50);
-		container.add(sub);
+		add(sub);
 		
 		add.addActionListener(this);
 		sub.addActionListener(this);
@@ -94,6 +95,7 @@ class CalculatorImplementation extends JFrame implements ActionListener{
 		 try {
 			 int result = 0;
 			 int a , b;
+			 jLabel3.setForeground(Color.BLACK);
 			 
 			 if(e.getSource() == add) {
 				 a = Integer.parseInt(jTextField.getText());
@@ -127,6 +129,7 @@ class CalculatorImplementation extends JFrame implements ActionListener{
 			 
 		 }catch(NumberFormatException nfe) {
 			 jLabel3.setText("Please Enter a number");
+			 jLabel3.setForeground(Color.RED);
 		 }
 	 }
 	

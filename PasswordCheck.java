@@ -1,6 +1,5 @@
 package swingByNonTelusko;
 
-import java.awt.Container;
 import java.awt.Cursor;
 import java.awt.FlowLayout;
 import java.awt.event.ItemEvent;
@@ -15,12 +14,11 @@ public class PasswordCheck {
 	public static void main(String[] args) {
 		
 		JFrame jFrame = new JFrame();
-		Container container = jFrame.getContentPane();
 		
 		
 		JPasswordField jPasswordField = new JPasswordField(10);
 		
-		container.add(jPasswordField);
+		jFrame.add(jPasswordField);
 		
 		JCheckBox jCheckBox = new JCheckBox("Show Password");
 		

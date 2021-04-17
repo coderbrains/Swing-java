@@ -145,6 +145,29 @@ public class Joptionpane {
 			}
 		});
 		
+		JButton jButton6 = new JButton("Confirmation_Message");
+		jButton6.setBounds(50, 230, 200, 30);
+		c.add(jButton6);
+		
+		jButton6.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				int result = JOptionPane.showConfirmDialog(c, "Do you want to Exit?", "Confirm", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE);
+				
+				if(result == JOptionPane.YES_OPTION) {
+					System.out.println("Yes button clicked");
+				}else if(result == JOptionPane.NO_OPTION) {
+					System.out.println("No button is clicked");
+				}else {
+					System.out.println("Cancel button is clicked");
+				}
+			}
+		});
+		
+		
+		
 		
 
 	}
