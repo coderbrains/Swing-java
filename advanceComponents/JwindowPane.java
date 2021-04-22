@@ -1,5 +1,10 @@
 package swingByNonTelusko.advanceComponents;
 
+/**
+ * @author Awanish kumar singh
+ * JWindowPane is a component by which 
+ */
+
 import java.awt.Container;
 import java.awt.FlowLayout;
 
